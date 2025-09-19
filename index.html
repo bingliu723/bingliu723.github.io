@@ -4,61 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <img src="your-photo.jpg" alt="Profile Photo" class="profile-pic">
+            <h1>Your Name</h1>
+            <p>Brief introduction about yourself goes here. Keep it short and concise.</p>
+            <a href="your-cv.pdf" target="_blank">Download CV</a>
+        </div>
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #000;
-            padding: 40px;
-            display: flex;
-            justify-content: center; /* center horizontally */
-        }
+        <!-- Right Column -->
+        <div class="right-column">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>This is a longer introduction area where you can describe your research interests, background, and any other information you want visitors to know about you.</p>
+            </div>
 
-        .container {
-            display: flex;
-            gap: 60px;
-            max-width: 1000px;
-            width: 100%;
-        }
-
-        .left-column, .right-column {
-            flex: 1;
-        }
-
-        /* Left column styles */
-        .left-column {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* center content inside left column */
-            text-align: center;
-        }
-
-        .profile-pic {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
-
-        p {
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-
-        .cv-button {
-            display: inline-block;
-            padding: 10px 20px;
-            border: 1px solid #000;
-            text-decoration: none;
-            color: #000;
+            <div class="section">
+                <h2>Publications</h2>
+                <ul class="paper-list">
+                    <li><a href="#">Paper Title 1</a> – Abstract or brief description</li>
+                    <li><a href="#">Paper Title 2</a> – Abstract or brief description</li>
+                    <li><a href="#">Paper Title 3</a> – Abstract or brief description</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
