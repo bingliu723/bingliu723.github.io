@@ -1,51 +1,104 @@
+/* Reset and basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: white;
-  color: black;
-  margin: 40px auto;
-  max-width: 800px;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;    /* vertical centering */
+    padding: 40px;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
+/* Container layout */
+.container {
+    display: flex;
+    gap: 60px;
+    max-width: 900px;      /* limit total container width */
+    width: 100%;
 }
 
-img.profile {
-  width: 180px;
-  border-radius: 50%;
-  display: block;
-  margin: 20px auto;
+/* Columns */
+.left-column, .right-column {
+    flex: 1;
+    max-width: 400px;      /* limit each column width */
 }
 
-h1, h2 {
-  margin-top: 1em;
+/* Left column */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.cv-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 15px;
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+.profile-pic {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.cv-button:hover {
-  background-color: #555;
+h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
-.paper {
-  margin-bottom: 20px;
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
-.paper-title {
-  font-weight: bold;
+a {
+    color: #0000EE;
+    text-decoration: underline;
 }
 
-.abstract {
-  font-style: italic;
-  color: #444;
+a:hover {
+    text-decoration: none;
+}
+
+/* Right column */
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.paper-list li {
+    margin-bottom: 10px;
+}
+
+/* Responsive stacking on smaller screens */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-column {
+        align-items: center;
+    }
+
+    .right-column .section {
+        text-align: center;
+    }
 }
