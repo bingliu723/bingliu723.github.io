@@ -1,47 +1,51 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  margin: 40px auto;
+  max-width: 800px;
+  line-height: 1.6;
 }
 
-/* Header */
 header {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-/* Sections */
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+img.profile {
+  width: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
 }
 
-/* Links */
-a {
-    color: #003366;
-    text-decoration: none;
-    font-weight: bold;
+h1, h2 {
+  margin-top: 1em;
 }
 
-a:hover {
-    text-decoration: underline;
+.cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #003366;
-    color: white;
-    margin-top: 20px;
+.cv-button:hover {
+  background-color: #555;
+}
+
+.paper {
+  margin-bottom: 20px;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.abstract {
+  font-style: italic;
+  color: #444;
 }
