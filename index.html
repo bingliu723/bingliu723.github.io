@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page</title>
     <style>
-        /* Basic Reset */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -14,16 +13,18 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff; /* plain white background */
+            background-color: #fff;
             color: #000;
             padding: 40px;
+            display: flex;
+            justify-content: center; /* center horizontally */
         }
 
         .container {
             display: flex;
-            gap: 40px;
+            gap: 60px;
             max-width: 1000px;
-            margin: 0 auto;
+            width: 100%;
         }
 
         .left-column, .right-column {
@@ -31,11 +32,17 @@
         }
 
         /* Left column styles */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* center content inside left column */
+            text-align: center;
+        }
+
         .profile-pic {
             width: 100%;
             max-width: 250px;
             height: auto;
-            border-radius: 0; /* no rounded corners */
             margin-bottom: 20px;
         }
 
@@ -55,64 +62,3 @@
             border: 1px solid #000;
             text-decoration: none;
             color: #000;
-            transition: background 0.2s;
-        }
-
-        .cv-button:hover {
-            background-color: #f0f0f0;
-        }
-
-        /* Right column styles */
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .paper-list li {
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #0000EE;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Left Column -->
-        <div class="left-column">
-            <img src="your-photo.jpg" alt="Profile Photo" class="profile-pic">
-            <h1>Your Name</h1>
-            <p>Brief introduction about yourself goes here. Keep it short and concise.</p>
-            <a href="your-cv.pdf" class="cv-button" target="_blank">Download CV</a>
-        </div>
-
-        <!-- Right Column -->
-        <div class="right-column">
-            <div class="section">
-                <h2>About Me</h2>
-                <p>This is a longer introduction area where you can describe your research interests, background, and any other information you want visitors to know about you.</p>
-            </div>
-
-            <div class="section">
-                <h2>Publications</h2>
-                <ul class="paper-list">
-                    <li><a href="#">Paper Title 1</a> – Abstract or brief description</li>
-                    <li><a href="#">Paper Title 2</a> – Abstract or brief description</li>
-                    <li><a href="#">Paper Title 3</a> – Abstract or brief description</li>
-                    <!-- Add more papers as needed -->
-                </ul>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
