@@ -1,42 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bing Liu</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* plain white background */
+            color: #000;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+        }
+
+        /* Left column styles */
+        .profile-pic {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 0; /* no rounded corners */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .cv-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: #000;
+            transition: background 0.2s;
+        }
+
+        .cv-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Right column styles */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .paper-list li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Bing Liu</h1>
-    <p>PhD Candidate in Economics</p>
-    <img src="me.jpg" alt="Photo of Bing Liu" class="profile">
-  </header>
+    <div class="container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <img src="your-photo.jpg" alt="Profile Photo" class="profile-pic">
+            <h1>Your Name</h1>
+            <p>Brief introduction about yourself goes here. Keep it short and concise.</p>
+            <a href="your-cv.pdf" class="cv-button" target="_blank">Download CV</a>
+        </div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Write your introduction here — research interests, background, etc.</p>
-  </section>
+        <!-- Right Column -->
+        <div class="right-column">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>This is a longer introduction area where you can describe your research interests, background, and any other information you want visitors to know about you.</p>
+            </div>
 
-  <section>
-    <h2>Research</h2>
-
-    <div class="paper">
-      <p class="paper-title"><a href="paper1.pdf">Paper Title 1</a></p>
-      <p class="abstract">This paper studies … (abstract here).</p>
+            <div class="section">
+                <h2>Publications</h2>
+                <ul class="paper-list">
+                    <li><a href="#">Paper Title 1</a> – Abstract or brief description</li>
+                    <li><a href="#">Paper Title 2</a> – Abstract or brief description</li>
+                    <li><a href="#">Paper Title 3</a> – Abstract or brief description</li>
+                    <!-- Add more papers as needed -->
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="paper">
-      <p class="paper-title"><a href="paper2.pdf">Paper Title 2</a></p>
-      <p class="abstract">This paper explores … (abstract here).</p>
-    </div>
-
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: yourname@university.edu</p>
-    <a href="CV.pdf" class="cv-button">Download CV</a>
-  </section>
 </body>
 </html>
