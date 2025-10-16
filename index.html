@@ -24,6 +24,7 @@
             <p>PhD student in Economics, Stanford</p>
             <p>Student Researcher, Google Research</p>
             <a href="CV.pdf" target="_blank">CV</a>
+            <p class="personal-subtle"><a href="personal.html">Personal page</a></p>
         </div>
 
         <!-- Right Column -->
@@ -33,64 +34,20 @@
                 <p></p>
             </div>
 
-            <p class="personal-link"><a href="personal.html">Personal page — about my interests</a></p>
+            
             <div class="section">
                 <h2>Working Papers</h2>
-                <ul class="paper-list">
-                    <li>
-                        <a href="papers/JMP.pdf" target="_blank" rel="noopener noreferrer" data-paper-id="non-linear-pricing">Non-linear Pricing with Maximum Demand (JMP)</a>
-                        – Abstract or brief description
-                        <div class="authors" data-key="authors-non-linear-pricing">
-                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="papers/Countervailing Incentives.pdf" target="_blank" rel="noopener noreferrer" data-paper-id="countervailing-incentive">The Optimal Design of Countervailing Incentives</a>
-                        – Abstract or brief description
-                        <div class="authors" data-key="authors-countervailing-incentive">
-                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
-                        </div>
-                    </li>
-                    
+                <ul class="paper-list" data-type="working">
                 </ul>
             </div>
             <div class="section">
                 <h2>Work in Progress</h2>
-                <ul class="paper-list">
-                    <li>
-                        <a href="" target="_blank" rel="noopener noreferrer" data-paper-id="non-linear-pricing">Control a Conversation</a>
-                        – Abstract or brief description
-                        <div class="authors" data-key="authors-non-linear-pricing">
-                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" target="_blank" rel="noopener noreferrer" data-paper-id="countervailing-incentive">The Biggar DWL</a>
-                        – Abstract or brief description
-                        <div class="authors" data-key="authors-countervailing-incentive">
-                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" target="_blank" rel="noopener noreferrer" data-paper-id="countervailing-incentive">Externalities, eﬃciency, and partitioned VCG
-mechanisms</a>
-                        – Abstract or brief description
-                        <div class="authors" data-key="authors-countervailing-incentive">
-                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
-                        </div>
-                    </li>
+                <ul class="paper-list" data-type="wip">
                 </ul>
             </div>
             <div class="section">
                 <h2>Publications</h2>
-                <ul class="paper-list">
-                    <li>
-                        <a href="https://direct.mit.edu/rest/article-abstract/doi/10.1162/rest_a_01389/117908/Efficient-Consignment-Auctions?redirectedFrom=fulltext" target="_blank" rel="noopener noreferrer" data-paper-id="efficient-consignment-auction">Efficient Consignment Auction</a>
-                        – Abstract or brief description
-                        <div class="authors" data-key="authors-efficient-consignment-auction">
-                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
-                        </div>
-                    </li>
+                <ul class="paper-list" data-type="publication">
                 </ul>
             </div>
         </div>
@@ -126,5 +83,217 @@ mechanisms</a>
             document.getElementById('reset-text').addEventListener('click', ()=> setSize(20));
         })();
     </script>
+        <script>
+        // Renderer: build paper lists from data/papers.json (with file:// fallback)
+        (function(){
+            // Embedded fallback data (used when fetch fails, e.g., file://)
+            const FALLBACK = [
+                {
+                    "id": "non-linear-pricing-with-maximum-demand",
+                    "title": "Non-linear Pricing with Maximum Demand (JMP)",
+                    "link": "papers/JMP.pdf",
+                    "type": "working",
+                    "authors": [],
+                    "presentedAt": "",
+                    "journal": "",
+                    "abstract": "Short abstract or brief description for Non-linear Pricing with Maximum Demand. Replace this with your full abstract or summary."
+                },
+                {
+                    "id": "the-optimal-design-of-countervailing-incentives",
+                    "title": "The Optimal Design of Countervailing Incentives",
+                    "link": "papers/Countervailing Incentives.pdf",
+                    "type": "working",
+                    "authors": [],
+                    "presentedAt": "",
+                    "journal": "",
+                    "abstract": "Short abstract or brief description for The Optimal Design of Countervailing Incentives. Replace this with your full abstract or summary."
+                },
+                {
+                    "id": "control-a-conversation",
+                    "title": "Control a Conversation",
+                    "link": "",
+                    "type": "wip",
+                    "authors": [],
+                    "presentedAt": "",
+                    "journal": "",
+                    "abstract": "Short abstract or brief description for Control a Conversation."
+                },
+                {
+                    "id": "the-biggar-dwl",
+                    "title": "The Biggar DWL",
+                    "link": "",
+                    "type": "wip",
+                    "authors": [],
+                    "presentedAt": "",
+                    "journal": "",
+                    "abstract": "Short abstract or brief description for The Biggar DWL."
+                },
+                {
+                    "id": "externalities-efficiency-and-partitioned-vcg-mechanisms",
+                    "title": "Externalities, efficiency, and partitioned VCG mechanisms",
+                    "link": "",
+                    "type": "wip",
+                    "authors": [],
+                    "presentedAt": "",
+                    "journal": "",
+                    "abstract": "Short abstract or brief description for Externalities, efficiency, and partitioned VCG mechanisms."
+                },
+                {
+                    "id": "efficient-consignment-auction",
+                    "title": "Efficient Consignment Auction",
+                    "link": "https://direct.mit.edu/rest/article-abstract/doi/10.1162/rest_a_01389/117908/Efficient-Consignment-Auctions?redirectedFrom=fulltext",
+                    "type": "publication",
+                    "authors": [],
+                    "presentedAt": "",
+                    "journal": "",
+                    "abstract": "Short abstract or brief description for Efficient Consignment Auction."
+                }
+            ];
+
+            function isBlank(s){ return s === null || s === undefined || String(s).trim() === '' }
+
+            function createPaperItem(p){
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.textContent = p.title || 'Untitled';
+                if(p.link && p.link.trim() !== ''){
+                    a.href = p.link;
+                    a.target = '_blank';
+                    a.rel = 'noopener noreferrer';
+                } else {
+                    a.href = '#';
+                }
+                a.dataset.paperId = p.id || '';
+                li.appendChild(a);
+
+                // authors
+                if(Array.isArray(p.authors) && p.authors.length){
+                    const d = document.createElement('div');
+                    d.className = 'authors';
+                    const span = document.createElement('span');
+                    span.className = 'authors-label';
+                    span.innerHTML = 'Co-authors: <span class="authors-names">' + p.authors.join(', ') + '</span>';
+                    d.appendChild(span);
+                    li.appendChild(d);
+                }
+
+                // presentedAt
+                if(!isBlank(p.presentedAt)){
+                    const d = document.createElement('div');
+                    d.className = 'presented-at';
+                    d.innerHTML = 'Presented at: <span class="presented-names">' + p.presentedAt + '</span>';
+                    li.appendChild(d);
+                }
+
+                // journal
+                if(!isBlank(p.journal)){
+                    const d = document.createElement('div');
+                    d.className = 'journal';
+                    d.innerHTML = 'Journal: <span class="journal-name">' + p.journal + '</span>';
+                    li.appendChild(d);
+                }
+
+                // abstract
+                if(!isBlank(p.abstract)){
+                    const pEl = document.createElement('p');
+                    pEl.className = 'paper-abstract';
+                    pEl.textContent = p.abstract;
+                    li.appendChild(pEl);
+                }
+
+                return li;
+            }
+
+            function showFileProtocolBanner(){
+                const existing = document.getElementById('file-protocol-banner');
+                if(existing) return;
+                const banner = document.createElement('div');
+                banner.id = 'file-protocol-banner';
+                banner.style.cssText = 'position:fixed;right:12px;top:12px;padding:8px 12px;background:#fff3cd;border:1px solid #ffeeba;color:#856404;border-radius:4px;font-size:13px;z-index:9999;box-shadow:0 2px 6px rgba(0,0,0,0.08)';
+                banner.innerHTML = 'Note: this page is opened via <code>file://</code>. Browser security prevents fetching local JSON, so the page is showing embedded fallback data. To see live edits to <code>data/papers.json</code>, serve this folder over HTTP (e.g. <code>python3 -m http.server</code>).';
+                document.body.appendChild(banner);
+            }
+
+            async function loadAndRender(){
+                let data = null;
+                const tryUrls = [
+                    'data/papers.json',
+                    'data/papers.json?t=' + Date.now()
+                ];
+
+                // If opened via file://, show a small banner explaining fallback behavior
+                if(window.location && window.location.protocol === 'file:'){
+                    console.warn('Page opened with file:// protocol — fetch() may be blocked. Using embedded fallback.');
+                    showFileProtocolBanner();
+                }
+
+                for(const url of tryUrls){
+                    try{
+                        console.log('Attempting to fetch papers JSON from', url);
+                        const res = await fetch(url, {cache: 'no-store'});
+                        if(res && res.ok){
+                            data = await res.json();
+                            console.log('Loaded papers.json from', url);
+                            break;
+                        } else {
+                            console.warn('Fetch failed for', url, res && res.status);
+                        }
+                    }catch(err){
+                        console.warn('Error fetching', url, err && err.message);
+                    }
+                }
+
+                if(!data){
+                    console.warn('Falling back to embedded papers data (FALLBACK).');
+                    data = FALLBACK;
+                }
+
+                const containers = document.querySelectorAll('.paper-list[data-type]');
+                containers.forEach(container=> container.innerHTML = '');
+
+                data.forEach(paper=>{
+                    const type = paper.type || 'working';
+                    const container = document.querySelector('.paper-list[data-type="' + type + '"]');
+                    if(!container) return; // skip unknown types
+                    container.appendChild(createPaperItem(paper));
+                });
+
+                // invoke read-more behavior after rendering
+                applyReadMore(220);
+            }
+
+            // Expose a callable read-more function
+            function applyReadMore(limit){
+                function truncate(text, n){ return text.length>n? text.slice(0,n).trim() + '…' : text }
+                document.querySelectorAll('.paper-abstract').forEach(p=>{
+                    // avoid double-wrapping: if there's already a sibling button with class read-more, skip
+                    const existing = p.nextElementSibling && p.nextElementSibling.classList && p.nextElementSibling.classList.contains('read-more');
+                    if(existing) return;
+                    const full = p.textContent.trim();
+                    if(full.length <= limit) return;
+                    p.textContent = truncate(full, limit);
+                    const btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'read-more';
+                    btn.textContent = 'Read more';
+                    btn.addEventListener('click', ()=>{
+                        if(btn.textContent === 'Read more'){
+                            p.textContent = full;
+                            btn.textContent = 'Show less';
+                        } else {
+                            p.textContent = truncate(full, limit);
+                            btn.textContent = 'Read more';
+                        }
+                    });
+                    p.after(btn);
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', loadAndRender);
+            // also expose to global for debugging
+            window._papers_applyReadMore = applyReadMore;
+        })();
+        </script>
+    
 </body>
 </html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "non-linear-pricing-with-maximum-demand",
+    "title": "Non-linear Pricing with Maximum Demand (JMP)",
+    "link": "papers/JMP.pdf",
+    "type": "working",
+    "authors": [],
+    "presentedAt": "",
+    "journal": "",
+    "abstract": "Short abstract or brief description for Non-linear Pricing with Maximum Demand. Replace this with your full abstract or summary."
+  },
+  {
+    "id": "the-optimal-design-of-countervailing-incentives",
+    "title": "The Optimal Design of Countervailing Incentives",
+    "link": "papers/Countervailing Incentives.pdf",
+    "type": "working",
+    "authors": [],
+    "presentedAt": "",
+    "journal": "",
+    "abstract": "Short abstract or brief description for The Optimal Design of Countervailing Incentives. Replace this with your full abstract or summary."
+  },
+  {
+    "id": "control-a-conversation",
+    "title": "Control a Conversation",
+    "link": "",
+    "type": "wip",
+    "authors": [],
+    "presentedAt": "",
+    "journal": "",
+    "abstract": "Short abstract or brief description for Control a Conversation."
+  },
+  {
+    "id": "the-biggar-dwl",
+    "title": "The Biggar DWL",
+    "link": "",
+    "type": "wip",
+    "authors": [],
+    "presentedAt": "",
+    "journal": "",
+    "abstract": "Short abstract or brief description for The Biggar DWL."
+  },
+  {
+    "id": "externalities-efficiency-and-partitioned-vcg-mechanisms",
+    "title": "Externalities, efficiency, and partitioned VCG mechanisms",
+    "link": "",
+    "type": "wip",
+    "authors": [],
+    "presentedAt": "",
+    "journal": "",
+    "abstract": "Short abstract or brief description for Externalities, efficiency, and partitioned VCG mechanisms."
+  },
+  {
+    "id": "efficient-consignment-auction",
+    "title": "Efficient Consignment Auction",
+    "link": "https://direct.mit.edu/rest/article-abstract/doi/10.1162/rest_a_01389/117908/Efficient-Consignment-Auctions?redirectedFrom=fulltext",
+    "type": "publication",
+    "authors": [Simon Loertscher, Leslie M. Marx],
+    "presentedAt": "",
+    "journal": "The Review of Economics and Statistics",
+    "abstract": "Consignment auctions are two-stage mechanisms to (re)-allocate emission permits. Firms are first endowed with permits and then allowed to trade them. We determine theoretically endowments that enable efficient allocation, subject to incentive compatibility, individual rationality, and no deficit. All firms prefer efficient consignment auctions to efficient standard auctions, making them politically palatable. Firms' investment incentives align with the first-best in efficient consignment auctions. Grandfathering based on efficient long-run allocations induces efficiency-permitting endowments. A simple calibration to data from Southern California's RECLAIM program validates our no-deficit assumption and shows that grandfathering provides the best theoretical match for the empirically observed endowments."
+  }
+]
