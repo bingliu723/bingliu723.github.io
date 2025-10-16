@@ -10,14 +10,85 @@ html, body {
 }
 
 body {
+    /* base font sizing: change --base-font-size to make all text bigger/smaller */
     font-family: Arial, sans-serif;
     background-color: #fff;
     color: #000;
     display: flex;
     justify-content: center; /* horizontal centering */
     align-items: center;    /* vertical centering */
-    padding: 40px;
+    padding: 2.5rem; /* scaled from 40px */
 }
+
+/* root variable for easy global scaling */
+:root {
+    /* default: 16px */
+    --base-font-size: 20px; /* default increased to 20px */
+    --site-font: 'Lora', serif;
+}
+
+html {
+    font-size: var(--base-font-size);
+}
+
+/* Use the professional font loaded from Google Fonts */
+body {
+    font-family: var(--site-font);
+}
+
+/* Text size control bar */
+.text-size-controls {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 0.25rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.text-size-controls button {
+    background: transparent;
+    border: none;
+    padding: 0.4rem 0.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.text-size-controls button:hover {
+    background: rgba(0,0,0,0.06);
+}
+
+@media (max-width: 500px) {
+    .text-size-controls {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+/* accessibility helper */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+.text-size-controls select {
+    border: none;
+    background: transparent;
+    padding: 0.25rem 0.4rem;
+    font-size: 0.95rem;
+}
+
+/* Font preview cards */
+/* font preview removed — site uses Lora */
 
 /* Container layout */
 .container {
@@ -50,7 +121,7 @@ body {
 
 h1 {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px at 16px base ; scales with --base-font-size */
 }
 
 p {
@@ -77,14 +148,36 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.personal-link {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 0.75rem 0;
+}
+.personal-link a {
+    color: #0000EE;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 .section h2 {
-    font-size: 20px;
+    font-size: 1.25rem; /* ~20px at 16px base ; scales with --base-font-size */
     margin-bottom: 10px;
 }
 
 .paper-list li {
     margin-bottom: 10px;
 }
+
+/* Co-author UI */
+.authors {
+    margin-top: 0.35rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.authors-label { color: #333; font-size: 0.95rem; }
+/* edit UI removed — authors are now static */
 
 /* Responsive stacking on smaller screens */
 @media (max-width: 800px) {

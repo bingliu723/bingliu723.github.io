@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bing Liu</title>
+    <!-- Site font: Lora -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Text size controls -->
+    <div class="text-size-controls" aria-hidden="false">
+        <button id="decrease-text" title="Decrease text" aria-label="Decrease text size">A-</button>
+        <button id="reset-text" title="Reset text" aria-label="Reset text size">A</button>
+        <button id="increase-text" title="Increase text" aria-label="Increase text size">A+</button>
+    </div>
     <div class="container">
         <!-- Left Column -->
         <div class="left-column">
-            <img src="your-photo.jpg" alt="Profile Photo" class="profile-pic">
-            <h1>Your Name</h1>
-            <p>Brief introduction about yourself goes here. Keep it short and concise.</p>
-            <a href="your-cv.pdf" target="_blank">Download CV</a>
+            <img src="profile 2.JPG" alt="Profile Photo" class="profile-pic">
+            <h1>Bing Liu</h1>
+            <h1>刘冰</h1>
+            <p>PhD student in Economics, Stanford</p>
+            <p>Student Researcher, Google Research</p>
+            <a href="CV.pdf" target="_blank">CV</a>
         </div>
 
         <!-- Right Column -->
@@ -23,15 +33,98 @@
                 <p>This is a longer introduction area where you can describe your research interests, background, and any other information you want visitors to know about you.</p>
             </div>
 
+            <p class="personal-link"><a href="personal.html">Personal page — more about my work & interests</a></p>
+            <div class="section">
+                <h2>Working Papers</h2>
+                <ul class="paper-list">
+                    <li>
+                        <a href="papers/JMP.pdf" target="_blank" rel="noopener noreferrer" data-paper-id="non-linear-pricing">Non-linear Pricing with Maximum Demand (JMP)</a>
+                        – Abstract or brief description
+                        <div class="authors" data-key="authors-non-linear-pricing">
+                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="papers/Countervailing Incentives.pdf" target="_blank" rel="noopener noreferrer" data-paper-id="countervailing-incentive">The Optimal Design of Countervailing Incentives</a>
+                        – Abstract or brief description
+                        <div class="authors" data-key="authors-countervailing-incentive">
+                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Work in Progress</h2>
+                <ul class="paper-list">
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer" data-paper-id="non-linear-pricing">Control a Conversation</a>
+                        – Abstract or brief description
+                        <div class="authors" data-key="authors-non-linear-pricing">
+                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer" data-paper-id="countervailing-incentive">The Biggar DWL</a>
+                        – Abstract or brief description
+                        <div class="authors" data-key="authors-countervailing-incentive">
+                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer" data-paper-id="countervailing-incentive">Externalities, eﬃciency, and partitioned VCG
+mechanisms</a>
+                        – Abstract or brief description
+                        <div class="authors" data-key="authors-countervailing-incentive">
+                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <div class="section">
                 <h2>Publications</h2>
                 <ul class="paper-list">
-                    <li><a href="#">Paper Title 1</a> – Abstract or brief description</li>
-                    <li><a href="#">Paper Title 2</a> – Abstract or brief description</li>
-                    <li><a href="#">Paper Title 3</a> – Abstract or brief description</li>
+                    <li>
+                        <a href="https://direct.mit.edu/rest/article-abstract/doi/10.1162/rest_a_01389/117908/Efficient-Consignment-Auctions?redirectedFrom=fulltext" target="_blank" rel="noopener noreferrer" data-paper-id="efficient-consignment-auction">Efficient Consignment Auction</a>
+                        – Abstract or brief description
+                        <div class="authors" data-key="authors-efficient-consignment-auction">
+                            <span class="authors-label">Co-authors: <span class="authors-names">—</span></span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
+    <script>
+        (function(){
+            const root = document.documentElement;
+            const STORAGE_KEY = 'site-base-font-size';
+            const step = 2; // px per step
+
+            function px(value){ return parseFloat(value.replace('px','')) }
+
+            function getCurrent(){
+                const val = getComputedStyle(root).getPropertyValue('--base-font-size') || getComputedStyle(document.documentElement).fontSize;
+                return px(val);
+            }
+
+            function setSize(pxValue){
+                root.style.setProperty('--base-font-size', pxValue + 'px');
+                try{ localStorage.setItem(STORAGE_KEY, pxValue); } catch(e){}
+            }
+
+            // init from storage
+            try{
+                // clear any legacy saved font preference so site uses Lora
+                try { localStorage.removeItem('site-font-family'); } catch(e){}
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if(saved) setSize(Number(saved));
+            } catch(e){}
+
+            document.getElementById('increase-text').addEventListener('click', ()=> setSize(getCurrent()+step));
+            document.getElementById('decrease-text').addEventListener('click', ()=> setSize(Math.max(12, getCurrent()-step)));
+            document.getElementById('reset-text').addEventListener('click', ()=> setSize(20));
+        })();
+    </script>
 </body>
 </html>
