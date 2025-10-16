@@ -54,7 +54,7 @@
     "title": "Efficient Consignment Auction",
     "link": "https://direct.mit.edu/rest/article-abstract/doi/10.1162/rest_a_01389/117908/Efficient-Consignment-Auctions?redirectedFrom=fulltext",
     "type": "publication",
-    "authors": [Simon Loertscher, Leslie M. Marx],
+    "authors": Simon Loertscher, Leslie M. Marx,
     "presentedAt": "",
     "journal": "The Review of Economics and Statistics",
     "abstract": "Consignment auctions are two-stage mechanisms to (re)-allocate emission permits. Firms are first endowed with permits and then allowed to trade them. We determine theoretically endowments that enable efficient allocation, subject to incentive compatibility, individual rationality, and no deficit. All firms prefer efficient consignment auctions to efficient standard auctions, making them politically palatable. Firms' investment incentives align with the first-best in efficient consignment auctions. Grandfathering based on efficient long-run allocations induces efficiency-permitting endowments. A simple calibration to data from Southern California's RECLAIM program validates our no-deficit assumption and shows that grandfathering provides the best theoretical match for the empirically observed endowments."
