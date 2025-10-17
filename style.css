@@ -14,9 +14,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     color: #000;
-    display: flex;
-    justify-content: center; /* horizontal centering */
-    align-items: center;    /* vertical centering */
+    /* Use normal document flow so tall content can scroll vertically */
+    display: block;
     padding: 2.5rem; /* scaled from 40px */
 }
 
@@ -31,6 +30,16 @@ html {
     font-size: var(--base-font-size);
 }
 
+/* Responsive scaling: --base-font-size is the user-controlled base (changed by JS),
+   --responsive-scale adjusts by viewport so text fits different screen sizes.
+   Tweak the clamp() values below to change min/ideal/max scaling. */
+:root {
+    --responsive-scale: clamp(0.85, calc(0.6vw + 0.9), 1.25);
+}
+
+html {
+    font-size: calc(var(--base-font-size) * var(--responsive-scale));
+}
 /* Use the professional font loaded from Google Fonts */
 body {
     font-family: var(--site-font);
@@ -93,15 +102,20 @@ body {
 /* Container layout */
 .container {
     display: flex;
-    gap: 60px;
-    max-width: 900px;      /* limit total container width */
+    gap: 48px;
+    max-width: 1100px;      /* allow more room so the right column can be wider */
     width: 100%;
+    margin: 0 auto; /* center container horizontally while allowing page to scroll */
 }
 
-/* Columns */
-.left-column, .right-column {
-    flex: 1;
-    max-width: 400px;      /* limit each column width */
+/* Columns: make left column a fixed/narrower column and let right column fill remaining space */
+.left-column {
+    flex: 0 0 300px; /* fixed base width on larger screens */
+    max-width: 320px;
+}
+.right-column {
+    flex: 1 1 0%; /* flexible: grow to fill available space */
+    min-width: 0; /* allow flex children to shrink appropriately */
 }
 
 /* Left column */
@@ -148,6 +162,12 @@ a:hover {
     margin-bottom: 30px;
 }
 
+/* Personal page section spacing (more breathing room) */
+.personal-section {
+    margin-bottom: 48px; /* increased spacing between sections */
+    padding-top: 6px;
+}
+
 .personal-link {
     width: 100%;
     text-align: left;
@@ -158,6 +178,14 @@ a:hover {
     text-decoration: underline;
     font-weight: 600;
 }
+
+.personal-subtle {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #444;
+}
+.personal-subtle a { color: #444; text-decoration: none; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.personal-subtle a:hover { color: #000; }
 
 .section h2 {
     font-size: 1.25rem; /* ~20px at 16px base ; scales with --base-font-size */
@@ -178,6 +206,36 @@ a:hover {
 }
 .authors-label { color: #333; font-size: 0.95rem; }
 /* edit UI removed — authors are now static */
+
+.presented-at {
+    margin-top: 0.25rem;
+    color: #555;
+    font-size: 0.92rem;
+}
+.presented-names { font-weight: 600; color: #222; }
+
+.journal {
+    margin-top: 0.25rem;
+    color: #555;
+    font-size: 0.92rem;
+}
+.journal-name { font-weight: 600; color: #222; }
+
+.paper-abstract {
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+    color: #333;
+}
+
+.read-more {
+    background: transparent;
+    border: none;
+    color: #0066cc;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.95rem;
+}
+.read-more:hover { text-decoration: underline; }
 
 /* Responsive stacking on smaller screens */
 @media (max-width: 800px) {

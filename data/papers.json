@@ -7,7 +7,7 @@
     "authors": [],
     "presentedAt": "",
     "journal": "",
-    "abstract": "Short abstract or brief description for Non-linear Pricing with Maximum Demand. Replace this with your full abstract or summary."
+    "abstract": "The economics literature on non-linear pricing has offered significant insights into real-world practices of second-degree price discrimination, with a central conclusion that optimal strategies involve differentiated quantity bundles with a quantity discount. However, this prediction is in contrast with the prevalence of quantity premiums in utility markets, parcel shipping, and cloud storage, as well as the widespread adoption of subscription and buffet pricing models that do not screen with quantities. Motivated by the empirical observation that consumers have a maximum demand, a finite quantity beyond which their marginal utility diminishes to zero, this papers makes a parsimonious deviation from the standard mechanism design model and show that accounting for the correlation between consumers' maximum demand and per-unit value, quantity premiums and the absence of screening by quantity can emerge as features of the optimal non-linear pricing strategy. In the case when the consumer's maximum demand and per-unit value are negatively correlated, the consumer preferences violates the ubiquitously held single-crossing assumption in the non-linear pricing and mechanism design literature. We provide a method to solve the problem. The optimal mechanism involves full surplus extraction, buffet pricing and non-monotonic allocation. Extending beyond the maximum demand model, we show these features remain in the optimal mechanism for consumer preferences that violate single-crossing in a more general form.  In this context, we demonstrate a case of monopolistic over-provision to illustrate how relaxing the single-crossing assumption can reverse standard economic intuitions. We show that a quantity premium (discount) is optimal when per-unit value and the maximum demand are perfectly positively (negatively) correlated and that extends to the cases when per-unit value and the maximum demand are stochastically related."
   },
   {
     "id": "the-optimal-design-of-countervailing-incentives",
@@ -17,44 +17,54 @@
     "authors": [],
     "presentedAt": "",
     "journal": "",
-    "abstract": "Short abstract or brief description for The Optimal Design of Countervailing Incentives. Replace this with your full abstract or summary."
+    "abstract": "Countervailing incentives – like the incentives faced by a shareholder to name a price that acts both as the selling price of their existing stocks and the purchase price of other shareholders’ stocks – are pervasive in mechanism and market design. Leveraging these countervailing incentives can make the truthful elicitation of a market participant’ valuations easier. We develop a unified framework for optimal mechanism design that explicitly accounts for countervailing incentives and provide a constructive algorithm to compute the optimal mechanism. The algorithm also enables empirical estimation of the designer’s welfare weight by matching model-implied allocations to observed outcomes. The framework yields new insights: the optimal mechanism features a quantity premium; cooperative production generates higher designer surplus than in standard exchange platform models; and optimal credible threats (uniformly worse outside options) can raise some market participants’ worst-case payoffs."
   },
   {
     "id": "control-a-conversation",
-    "title": "Control a Conversation",
+    "title": "Control a Conversation (Slides coming soon)",
     "link": "",
     "type": "wip",
-    "authors": [],
+    "authors": ["Martino Banchio, Andrés Perlroth"],
     "presentedAt": "",
     "journal": "",
-    "abstract": "Short abstract or brief description for Control a Conversation."
+    "abstract": ""
+  },
+  {
+    "id": "control-a-conversation",
+    "title": "Product Differentiation and Competition",
+    "link": "",
+    "type": "wip",
+    "authors": ["Gagan Aggarwal, Andrés Perlroth"],
+    "presentedAt": "",
+    "journal": "",
+    "abstract": ""
   },
   {
     "id": "the-biggar-dwl",
-    "title": "The Biggar DWL",
+    "title": "The Biggar DWL (Draft available upon request)",
     "link": "",
     "type": "wip",
-    "authors": [],
-    "presentedAt": "",
+    "authors": ["Simon Loertscher"],
+    "presentedAt": "EARIE 2024",
     "journal": "",
-    "abstract": "Short abstract or brief description for The Biggar DWL."
+    "abstract": "Analysing otherwise standard monopoly and oligopoly models in which consumers’investments improve product quality, we show that the effects of market power on consumer and social surplus easily dwarf those in models without investments. Pro-hibiting mergers that are profitable once investments are sunk can be Pareto improving because, under Cournot oligopoly, industry and per-firm profit before investment need not be maximized at monopoly. Price ceilings inhibiting profit maximization ex post can increase everyone’s welfare by creating commitment firms with market power lack. Accounting for consumers’ investment incentives also opens scope for socially deficient free entry and, thereby, for industrial policy."
   },
   {
     "id": "externalities-efficiency-and-partitioned-vcg-mechanisms",
-    "title": "Externalities, efficiency, and partitioned VCG mechanisms",
+    "title": "Externalities, efficiency, and partitioned VCG mechanisms (Draft available upon request)",
     "link": "",
     "type": "wip",
-    "authors": [],
-    "presentedAt": "",
+    "authors": ["Simon Loertscher"],
+    "presentedAt": "Asian School in Economic Theory Keio University in Tokyo 2023, the Connections Workshop: Mathematics and Computer Science of Market and Mechanism Design 2023 at UC Berkeley,the 2024 Conference on Mechanism and Institution Design in Budapest, Games 2024 at Peking University",
     "journal": "",
-    "abstract": "Short abstract or brief description for Externalities, efficiency, and partitioned VCG mechanisms."
+    "abstract": "Externalities, while relevant in the real world, are, according to common practice, not accounted for in market design. This paper shows when the common practice is justified even though externalities matter for the eﬃcient allocation of resources and derives the direct mechanisms that allocate eﬃciently, endow the agents with dominant strategies, respect their individual rationality constraint and minimize their communicative requirements. These mechanisms and standard auction formats like the second-price auction are part of a family of mechanisms that we call partitioned VCG mechanism. In such a mechanism, each agent bids on all elements in a partition of a subset of the feasible allocations. The coarsest partitioned VCG consistent with eﬃciency minimizes the agents’ communicative requirements. It can be implemented in undominated strategies with a two-stage mechanism in which in the first stage each agent selects the partition it wants to bid on. Consequently, the designer does not need to know the agents’ preference structure to allocate eﬃciently in the presence of externalities."
   },
   {
     "id": "efficient-consignment-auction",
     "title": "Efficient Consignment Auction",
     "link": "https://direct.mit.edu/rest/article-abstract/doi/10.1162/rest_a_01389/117908/Efficient-Consignment-Auctions?redirectedFrom=fulltext",
     "type": "publication",
-    "authors": Simon Loertscher, Leslie M. Marx,
+    "authors": ["Simon Loertscher, Leslie M. Marx"],
     "presentedAt": "",
     "journal": "The Review of Economics and Statistics",
     "abstract": "Consignment auctions are two-stage mechanisms to (re)-allocate emission permits. Firms are first endowed with permits and then allowed to trade them. We determine theoretically endowments that enable efficient allocation, subject to incentive compatibility, individual rationality, and no deficit. All firms prefer efficient consignment auctions to efficient standard auctions, making them politically palatable. Firms' investment incentives align with the first-best in efficient consignment auctions. Grandfathering based on efficient long-run allocations induces efficiency-permitting endowments. A simple calibration to data from Southern California's RECLAIM program validates our no-deficit assumption and shows that grandfathering provides the best theoretical match for the empirically observed endowments."

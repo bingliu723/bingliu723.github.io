@@ -31,7 +31,7 @@
         <div class="right-column">
             <div class="section">
                 <h2>About Me</h2>
-                <p></p>
+                <p>I'm a job market candidate interested in Microeconomic Theory, Mechanism Design and Market Design. <br><br>At Google Research, I'm kindly hosted by <a href="https://research.google.com/intl/en/pubs/author3107.html" target="_blank" rel="noopener noreferrer">Gagan Aggarwal</a> and have been working with Gagan Aggarwal, <a href="https://scholar.google.com/citations?user=bHUJAtYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Andrés Perlroth</a> and <a href="https://martinobanchio.github.io" target="_blank" rel="noopener noreferrer">Martino Banchio</a>. It's been an absolute pleasure to work with, learn from and interact with them and the entire Market Algorithm team.    <br><br><strong>Dissertation Committee: </strong> I have been extremely fortunate to be advised by <a href="https://milgrom.people.stanford.edu" target="_blank" rel="noopener noreferrer">Paul Milgrom</a>, <a href="https://profiles.stanford.edu/ilya-segal" target="_blank" rel="noopener noreferrer">Ilya Segal</a>, <a href="https://sites.google.com/site/ravijagadeesan/" target="_blank" rel="noopener noreferrer">Ravi Jagadeesan</a>, and  <a href="https://web.stanford.edu/~alroth/" target="_blank" rel="noopener noreferrer">Alvin Roth</a>. I am having the best time learning from and interacting with them. </p>
             </div>
 
             
@@ -204,49 +204,13 @@
                 return li;
             }
 
-            function showFileProtocolBanner(){
-                const existing = document.getElementById('file-protocol-banner');
-                if(existing) return;
-                const banner = document.createElement('div');
-                banner.id = 'file-protocol-banner';
-                banner.style.cssText = 'position:fixed;right:12px;top:12px;padding:8px 12px;background:#fff3cd;border:1px solid #ffeeba;color:#856404;border-radius:4px;font-size:13px;z-index:9999;box-shadow:0 2px 6px rgba(0,0,0,0.08)';
-                banner.innerHTML = 'Note: this page is opened via <code>file://</code>. Browser security prevents fetching local JSON, so the page is showing embedded fallback data. To see live edits to <code>data/papers.json</code>, serve this folder over HTTP (e.g. <code>python3 -m http.server</code>).';
-                document.body.appendChild(banner);
-            }
-
             async function loadAndRender(){
                 let data = null;
-                const tryUrls = [
-                    'data/papers.json',
-                    'data/papers.json?t=' + Date.now()
-                ];
-
-                // If opened via file://, show a small banner explaining fallback behavior
-                if(window.location && window.location.protocol === 'file:'){
-                    console.warn('Page opened with file:// protocol — fetch() may be blocked. Using embedded fallback.');
-                    showFileProtocolBanner();
-                }
-
-                for(const url of tryUrls){
-                    try{
-                        console.log('Attempting to fetch papers JSON from', url);
-                        const res = await fetch(url, {cache: 'no-store'});
-                        if(res && res.ok){
-                            data = await res.json();
-                            console.log('Loaded papers.json from', url);
-                            break;
-                        } else {
-                            console.warn('Fetch failed for', url, res && res.status);
-                        }
-                    }catch(err){
-                        console.warn('Error fetching', url, err && err.message);
-                    }
-                }
-
-                if(!data){
-                    console.warn('Falling back to embedded papers data (FALLBACK).');
-                    data = FALLBACK;
-                }
+                try{
+                    const res = await fetch('data/papers.json', {cache: 'no-store'});
+                    if(res.ok) data = await res.json();
+                }catch(e){ /* fall through to fallback */ }
+                if(!data) data = FALLBACK;
 
                 const containers = document.querySelectorAll('.paper-list[data-type]');
                 containers.forEach(container=> container.innerHTML = '');
