@@ -17,11 +17,11 @@
     "authors": [],
     "presentedAt": "",
     "journal": "",
-    "abstract": "Countervailing incentives – like the incentives faced by a shareholder to name a price that acts both as the selling price of their existing stocks and the purchase price of other shareholders’ stocks – are pervasive in mechanism and market design. Leveraging these countervailing incentives can make the truthful elicitation of a market participant’ valuations easier. We develop a unified framework for optimal mechanism design that explicitly accounts for countervailing incentives and provide a constructive algorithm to compute the optimal mechanism. The algorithm also enables empirical estimation of the designer’s welfare weight by matching model-implied allocations to observed outcomes. The framework yields new insights: the optimal mechanism features a quantity premium; cooperative production generates higher designer surplus than in standard exchange platform models; and optimal credible threats (uniformly worse outside options) can raise some market participants’ worst-case payoffs."
+    "abstract": "Countervailing incentives -- arising when an agent has an incentive to understate their type at some realizations and to overstate it at others -- are pervasive in many mechanism and market design settings such as resource pooling, auction with externalities, and multi-product monopoly pricing. This paper develops a unified framework for optimal mechanism design that explicitly accounts for countervailing incentives, presents an algorithm to compute the optimal mechanism and identifies conditions on agents' preferences under which the method applies. The algorithm enables empirical estimation of the designer’s welfare weight by matching theoretical allocations to observed outcomes. We establish that leveraging countervailing incentives can increase designer surplus and that a `quantity' premium is a general feature of optimal mechanisms when agents have linear utilities. Finally, we derive comparative statics for agents’ worst-case payoffs: counterintuitively, uniformly worsening one agent’s outside option can increase other agents’ worst-case payoffs."
   },
   {
     "id": "control-a-conversation",
-    "title": "Control a Conversation (Slides coming soon)",
+    "title": "Control a Conversation (Draft coming soon)",
     "link": "",
     "type": "wip",
     "authors": ["Martino Banchio, Andrés Perlroth"],
