@@ -30,7 +30,7 @@
     "abstract": ""
   },
   {
-    "id": "control-a-conversation",
+    "id": "Product-Differentiation-and-Competition",
     "title": "Product Differentiation and Competition",
     "link": "",
     "type": "wip",
@@ -38,6 +38,16 @@
     "presentedAt": "",
     "journal": "",
     "abstract": ""
+  },
+  {
+    "id": "Robust-Rights-to-the-Commons",
+    "title": "Robust Rights to the Commons",
+    "link": "",
+    "type": "wip",
+    "authors": ["Billy Ferguson"],
+    "presentedAt": "",
+    "journal": "",
+    "abstract": "Agents experience externalities through each other's actions and allocations. In that sense, all resources can be considered the commons . Standard property right design that only specifies each agent's own allocation, and not what actions can be taken, is no longer the appropriate framework in the presence of externalities. We extend property rights to rights over any change in action and allocation that create externalities. Each agent's right is represented by a probability that the agent's preferred change is enforced in the outside option. Agents have private information about their externalities. The designer wants to implement the efficient change but is subject to incentive compatibility and individual rationality constraints. Rights must resolve the trade-off between allowing for productive changes in use and protecting impacted third-parties. Using tools from mechanism design we compute the expected transaction cost of implementing efficient resource management for any choice of rights. We characterize robust rights to the commons that guarantee implementation of efficient outcomes at the lowest cost."
   },
   {
     "id": "the-biggar-dwl",
