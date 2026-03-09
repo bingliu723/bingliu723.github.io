@@ -10,32 +10,12 @@
     "abstract": "We revisit non-linear pricing with a parsimonious yet empirically grounded departure: each consumer has two types, a per-unit value, and a maximum demand (a finite quantity beyond which marginal utility becomes zero). This single modification simultaneously addresses two major limitations in the literature that has only been studied in isolation: the difficulty of rationalizing the prevalence of all-you-can-eat pricing (zero marginal price) in many subscription models and unlimited uses, and the restrictiveness of the single-crossing assumption that precludes any rank change in marginal utilities across types as quantity varies. We show that, when single-crossing fails, zero marginal price can be optimal, thereby linking the two limitations. In addition, the optimal mechanism can feature full consumer surplus extraction and non-monotonic allocations. Notably, the monopolist's profit-maximizing quantity may exceed the efficient quantity, overturning the standard intuition. Finally, we characterize when the optimal marginal prices rise or fall as a function of the correlation of the two types. The optimality of rising marginal prices when the two types are positively affiliated challenges the canonical quantity-discount prediction and rationalizes the widespread use of quantity premiums in utility markets, parcel shipping, and cloud storage. "
   },
   {
-    "id": "the-optimal-design-of-countervailing-incentives",
-    "title": "The Optimal Design of Countervailing Incentives",
-    "link": "papers/Countervailing Incentives.pdf",
-    "type": "working",
-    "authors": [],
-    "presentedAt": "",
-    "journal": "",
-    "abstract": "Countervailing incentives -- arising when an agent has an incentive to understate their type at some realizations and to overstate it at others -- are pervasive in many mechanism and market design settings such as resource pooling, auction with externalities, and multi-product monopoly pricing. This paper develops a unified framework for optimal mechanism design that explicitly accounts for countervailing incentives, presents an algorithm to compute the optimal mechanism and identifies conditions on agents' preferences under which the method applies. The algorithm enables empirical estimation of the designer’s welfare weight by matching theoretical allocations to observed outcomes. We establish that leveraging countervailing incentives can increase designer surplus and that a `quantity' premium is a general feature of optimal mechanisms when agents have linear utilities. Finally, we derive comparative statics for agents’ worst-case payoffs: counterintuitively, uniformly worsening one agent’s outside option can increase other agents’ worst-case payoffs."
-  },
-  {
     "id": "control-a-conversation",
-    "title": "Control a Conversation (Draft coming soon)",
+    "title": "Control a Conversation",
     "link": "",
     "type": "wip",
     "authors": ["Martino Banchio, Andrés Perlroth"],
-    "presentedAt": "",
-    "journal": "",
-    "abstract": ""
-  },
-  {
-    "id": "Product-Differentiation-and-Competition",
-    "title": "Product Differentiation and Competition",
-    "link": "",
-    "type": "wip",
-    "authors": ["Gagan Aggarwal, Andrés Perlroth"],
-    "presentedAt": "",
+    "presentedAt": "papers/Controlling_the_Conversation.pdf",
     "journal": "",
     "abstract": ""
   },
