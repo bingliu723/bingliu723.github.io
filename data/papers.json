@@ -1,23 +1,23 @@
 [
   {
     "id": "non-linear-pricing-with-maximum-demand",
-    "title": "Non-linear Pricing with Maximum Demand (JMP)",
+    "title": "Valuation and Satiation: A Two-Dimensional Theory of Nonlinear Pricing",
     "link": "papers/JMP.pdf",
     "type": "working",
     "authors": [],
     "presentedAt": "",
     "journal": "",
-    "abstract": "We revisit non-linear pricing with a parsimonious yet empirically grounded departure: each consumer has two types, a per-unit value, and a maximum demand (a finite quantity beyond which marginal utility becomes zero). This single modification simultaneously addresses two major limitations in the literature that has only been studied in isolation: the difficulty of rationalizing the prevalence of all-you-can-eat pricing (zero marginal price) in many subscription models and unlimited uses, and the restrictiveness of the single-crossing assumption that precludes any rank change in marginal utilities across types as quantity varies. We show that, when single-crossing fails, zero marginal price can be optimal, thereby linking the two limitations. In addition, the optimal mechanism can feature full consumer surplus extraction and non-monotonic allocations. Notably, the monopolist's profit-maximizing quantity may exceed the efficient quantity, overturning the standard intuition. Finally, we characterize when the optimal marginal prices rise or fall as a function of the correlation of the two types. The optimality of rising marginal prices when the two types are positively affiliated challenges the canonical quantity-discount prediction and rationalizes the widespread use of quantity premiums in utility markets, parcel shipping, and cloud storage. "
+    "abstract": "Why do firms use such varied non-linear pricing? I show the full range of patterns arises from the correlation between consumer valuation and satiation, including increasing or zero marginal prices—patterns that canonical models cannot explain. The negative correlation case violates the single-crossing assumption. I characterize the optimal mechanism as a multi-part tariff that exhibits several non-standard outcomes, including non-monotonic allocations, monopoly overprovision, and full consumer surplus extraction."
   },
   {
     "id": "control-a-conversation",
-    "title": "Control a Conversation",
+    "title": "Control the Conversation",
     "link": "",
     "type": "wip",
     "authors": ["Martino Banchio, Andrés Perlroth"],
     "presentedAt": "papers/Controlling_the_Conversation.pdf",
     "journal": "",
-    "abstract": ""
+    "abstract": "We study how AI assistants design their conversations. An assistant, with a private objective, guides a user through her search via sequential queries, modeled as partitions of the search space. The user selects the subset with the highest average value. Using a prior-free framework, we maximize the platform's competitive ratio, that is, the ratio between the platform's optimal performance and the performance of the omniscient benchmark. We provide an optimal randomized policy that achieves bounded competitive ratio of 1/n-1, where n is the number of items. This policy is implemented as a sequence of ``recommendations'', that is, the AI sequentially proposes candidates from the item set until one is accepted."
   },
   {
     "id": "Robust-Rights-to-the-Commons",
