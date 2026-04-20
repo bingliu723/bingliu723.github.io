@@ -12,10 +12,10 @@
   {
     "id": "control-a-conversation",
     "title": "Control the Conversation",
-    "link": "",
+    "link": "papers/Controlling_the_Conversation.pdf",
     "type": "wip",
     "authors": ["Martino Banchio, Andrés Perlroth"],
-    "presentedAt": "papers/Controlling_the_Conversation.pdf",
+    "presentedAt": "",
     "journal": "",
     "abstract": "We study how AI assistants design their conversations. An assistant, with a private objective, guides a user through her search via sequential queries, modeled as partitions of the search space. The user selects the subset with the highest average value. Using a prior-free framework, we maximize the platform's competitive ratio, that is, the ratio between the platform's optimal performance and the performance of the omniscient benchmark. We provide an optimal randomized policy that achieves bounded competitive ratio of 1/n-1, where n is the number of items. This policy is implemented as a sequence of ``recommendations'', that is, the AI sequentially proposes candidates from the item set until one is accepted."
   },
