@@ -30,26 +30,6 @@
     "abstract": "Agents experience externalities through each other's actions and allocations. In that sense, all resources can be considered the commons . Standard property right design that only specifies each agent's own allocation, and not what actions can be taken, is no longer the appropriate framework in the presence of externalities. We extend property rights to rights over any change in action and allocation that create externalities. Each agent's right is represented by a probability that the agent's preferred change is enforced in the outside option. Agents have private information about their externalities. The designer wants to implement the efficient change but is subject to incentive compatibility and individual rationality constraints. Rights must resolve the trade-off between allowing for productive changes in use and protecting impacted third-parties. Using tools from mechanism design we compute the expected transaction cost of implementing efficient resource management for any choice of rights. We characterize robust rights to the commons that guarantee implementation of efficient outcomes at the lowest cost."
   },
   {
-    "id": "the-biggar-dwl",
-    "title": "The Biggar DWL (Draft available upon request)",
-    "link": "",
-    "type": "wip",
-    "authors": ["Simon Loertscher"],
-    "presentedAt": "EARIE 2024",
-    "journal": "",
-    "abstract": "Analysing otherwise standard monopoly and oligopoly models in which consumers’investments improve product quality, we show that the effects of market power on consumer and social surplus easily dwarf those in models without investments. Pro-hibiting mergers that are profitable once investments are sunk can be Pareto improving because, under Cournot oligopoly, industry and per-firm profit before investment need not be maximized at monopoly. Price ceilings inhibiting profit maximization ex post can increase everyone’s welfare by creating commitment firms with market power lack. Accounting for consumers’ investment incentives also opens scope for socially deficient free entry and, thereby, for industrial policy."
-  },
-  {
-    "id": "externalities-efficiency-and-partitioned-vcg-mechanisms",
-    "title": "Externalities, efficiency, and partitioned VCG mechanisms (Draft available upon request)",
-    "link": "",
-    "type": "wip",
-    "authors": ["Simon Loertscher"],
-    "presentedAt": "Asian School in Economic Theory Keio University in Tokyo 2023, the Connections Workshop: Mathematics and Computer Science of Market and Mechanism Design 2023 at UC Berkeley,the 2024 Conference on Mechanism and Institution Design in Budapest, Games 2024 at Peking University",
-    "journal": "",
-    "abstract": "Externalities, while relevant in the real world, are, according to common practice, not accounted for in market design. This paper shows when the common practice is justified even though externalities matter for the eﬃcient allocation of resources and derives the direct mechanisms that allocate eﬃciently, endow the agents with dominant strategies, respect their individual rationality constraint and minimize their communicative requirements. These mechanisms and standard auction formats like the second-price auction are part of a family of mechanisms that we call partitioned VCG mechanism. In such a mechanism, each agent bids on all elements in a partition of a subset of the feasible allocations. The coarsest partitioned VCG consistent with eﬃciency minimizes the agents’ communicative requirements. It can be implemented in undominated strategies with a two-stage mechanism in which in the first stage each agent selects the partition it wants to bid on. Consequently, the designer does not need to know the agents’ preference structure to allocate eﬃciently in the presence of externalities."
-  },
-  {
     "id": "efficient-consignment-auction",
     "title": "Efficient Consignment Auction",
     "link": "https://direct.mit.edu/rest/article-abstract/doi/10.1162/rest_a_01389/117908/Efficient-Consignment-Auctions?redirectedFrom=fulltext",
